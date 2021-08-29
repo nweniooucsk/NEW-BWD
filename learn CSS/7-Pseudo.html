@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+
+    <style>
+        .box {
+            width: 500px;
+            margin: 100px auto;
+            border: 2px solid red;
+            padding: 10px;
+            text-align: center;
+            transition: 2s;
+        }
+        
+        .box:hover {
+            background-color: hotpink;
+            color: #fff;
+        }
+        
+        .box:active {
+            background-color: goldenrod;
+        }
+        
+        .text {
+            width: 500px;
+            margin: 100px auto;
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+            transition: 2s;
+        }
+        
+        .text:hover {
+            background-color: royalblue;
+        }
+        
+        .text:active {
+            background-color: hotpink;
+        }
+        /*  .text:focus {
+            background-color: gold;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, omnis excepturi! Voluptate laboriosam porro possimus accusantium officia, fugit iusto maxime dicta dolores nostrum. Illo totam deleniti labore reiciendis vel repellat.</p>
+    </div>
+
+    <textarea class="text" rows="5">
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat dicta pariatur vitae! Possimus exercitationem sunt dignissimos aspernatur unde similique? Eaque, at
+        </p>
+    </div>
+</body>
+
+</html>
