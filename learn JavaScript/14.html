@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let myself = {
+        //     // property
+        //     name: "nwe ni oo",
+        //     age: 19,
+        //     bf: "zaw",
+        //     skill: "Web Development",
+
+        //     // methods
+        //     teach() {
+        //         return this.name + " teach " + this.skill;
+        //     },
+
+        //     showBdYear() {
+        //         return `${this.name} was born in ${2021-this.age}`;
+
+        //     }
+        // }
+
+
+
+        // class Myself {
+        //     constructor(x, y) {
+        //         // console.log("I'm constructor === " + x + " === " + y);
+        //         this.name = x;
+        //     }
+
+        //     //properties
+        //     static age = 19;
+        //     bf = "Zaw";
+        //     skill = "Web Development";
+        //     //methods
+        //     teach() {
+        //         return this.name + " can teach ";
+        //     }
+        //     showBdYear() {
+        //         return "I was bored in 2002";
+        //     }
+
+        // }
+
+
+        // let MySelf = new Myself("bbb", "cc", "dd"); //instantiate (class==> obj)
+        // console.log(MySelf.name);
+        // console.log(MySelf.bf);
+        // console.log(MySelf.skill);
+        // console.log(MySelf.showBdYear());
+
+
+        class Student {
+
+            constructor(name, age, phone) {
+                this.name = name;
+                this.age = age;
+                this.phone = phone;
+            }
+            learn() {
+                return this.name + " can learn";
+            }
+
+        }
+
+        let S1 = new Student("Nwe Ni Oo", 19, "09778719947");
+        let S2 = new Student("Kalyar", 18, "09778719947");
+        let S3 = new Student("Zaw Zaw", 15, "09778719947");
+        let S4 = new Student("Tun Tun", 16, "09778719947");
+    </script>
+
+</body>
+
+</html>

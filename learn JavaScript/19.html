@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="header">Min Ga Lar Par</h1>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, blanditiis iste? Harum ad nihil, deleniti eum labore in nam deserunt laudantium ducimus illum recusandae quod eligendi repudiandae, odio ipsum tempore.
+    </p>
+    <p>This is paragraph</p>
+
+    <input type="text" id="inputText">
+    <button onclick="changeHeader()">Click Me</button>
+
+    <ul id="list">
+        <li class="list-item">Apple</li>
+        <li class="list-item">Mango</li>
+        <li class="list-item">Banana</li>
+        <li class="list-item">Orange</li>
+    </ul>
+
+    <script>
+        let i = document.getElementById("inputText");
+        let h = document.getElementById("header");
+
+        function changeHeader() {
+            let inputText = i.value
+            h.innerText = inputText
+
+            // let inputText = prompt("say something")
+            // document.getElementById("header").innerText = inputText
+
+            //input from window ==>output from document
+
+        }
+    </script>
+
+</body>
+
+</html>

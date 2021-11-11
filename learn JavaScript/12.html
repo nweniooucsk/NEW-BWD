@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let fruits = ["orange", "apple ", "mango", "banana", "lemon"];
+        let marks = [35, 46, 48, 78, 80, 50];
+        let myInfo = {
+            name: "nwe ni oo",
+            age: 19,
+            job: "student",
+            liveIn: "Yesagyo",
+            relationShipStatus: "single"
+        };
+
+        // for (let i = 1; i <= 5; i++) {
+        //     console.log("I'm loop " + i);
+        // }
+
+
+        // for (let i = 0; i < fruits.length; i++) {
+        //     console.log("I like " + fruits[i]);
+        // }
+
+
+        // let total = 0;
+        // for (let i = 0; i < marks.length; i++) {
+        //     total += marks[i];
+        //     console.log(marks[i]);
+        // }
+        // console.log("total ==>" + total);
+
+
+        // for (x of fruits) {
+        //     console.log(x);
+        // }
+
+
+        let total = 0;
+        for (mask of marks) {
+            total += mask;
+            console.log(mask);
+        }
+        console.log("total==> " + total)
+
+        for (x in fruits) {
+            console.log(x + "  _  " + fruits[x]);
+        }
+
+        for (x in myInfo) {
+            console.log(x + " _ " + myInfo[x]);
+        }
+    </script>
+</body>
+
+</html>

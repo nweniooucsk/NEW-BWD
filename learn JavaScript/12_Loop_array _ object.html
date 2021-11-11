@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop Array & Object</title>
+</head>
+
+<body>
+    <script>
+        let fruits = ["apple", "orange", "Lemon", "Banana", "Mango"];
+        let marks = [37, 42, 54, 89, 60, 30];
+        let myInfo = {
+            name: "nwe ni oo",
+            age: 19,
+            relationshipStatus: "single",
+            job: "student",
+            liveIn: "Yesagyo"
+        };
+
+        // for (let i = 1; i <= 5; i++) {
+        //     console.log("I'm Loop " + i);
+        // };
+        // console.log(i)
+
+
+        // for (let i = 0; i < fruits.length; i++) {
+        //     console.log("I like " + fruits[i]);
+        // };
+
+
+        let total = 0;
+        for (let i = 0; i < marks.length; i++) {
+            total += marks[i];
+        }
+        console.log("Total marks => " + total);
+
+
+        // let total = 0;
+        // for (mask of marks) {
+        //     console.log(total += x);
+        // }
+
+        for (x in fruits) {
+            console.log(x, " _ ", fruits[x]);
+        }
+
+        for (x in myInfo) {
+            console.log(x, "_", myInfo[x]);
+        }
+
+        //x နေရာမာ အဲ.လိုရေးလည္း ရတယ္။
+
+        for (fruit of fruits) {
+            console.log(fruit);
+        }
+    </script>
+</body>
+
+</html>

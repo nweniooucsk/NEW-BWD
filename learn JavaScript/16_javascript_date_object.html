@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JaveScript Date Object</title>
+</head>
+
+<body>
+    <script>
+        // let d = new Date();
+        // console.log(d.getHours() + " : " + d.getMinutes());
+        // console.log(` ${d.getDate()} / ${d.getMonth()} / ${d.getFullYear()}`);
+
+
+        // d.toString();
+        // 'Thu Sep 23 2021 09:53:59 GMT+0630 (Myanmar Time)'
+
+        // d.toDateString();
+        // 'Thu Sep 23 2021'
+
+        // d.toTimeString();
+        // '09:53:59 GMT+0630 (Myanmar Time)'
+
+        // d.toLocaleString();
+        // '9/23/2021, 9:53:59 AM'
+
+        // d.toLocaleString("en-Au");
+        // '23/09/2021, 9:53:59 am'
+
+        // d.toLocaleString("en-US");
+        // '9/23/2021, 9:53:59 AM'
+
+        // d.toLocaleString("ko-KA");
+        // '2021. 9. 23. 오전 9:53:59'
+
+        // d.toLocaleDateString();
+        // '9/23/2021'
+
+        // d.toLocaleTimeString();
+        // '9:53:59 AM'
+
+        // d.toLocaleTimeString("ko-KA");
+        // '오전 9:53:59'
+
+
+        let d = new Date();
+        console.log(d);
+
+        // d.setDate(27);
+        // console.log(d);
+
+        // let currentHour = d.getHours();
+        // d.setHours(currentHour + 1500);
+        // console.log(d);
+
+        // နောက္တစ္ျကိမ္ သေြးလွူရမည္.Date
+        d.setMonth(d.getMonth() + 4);
+        console.log(d);
+
+        totalLessonHours = 50;
+        learnHoursPerDays = 2;
+        DaysToFinish = totalLessonHours / learnHoursPerDays;
+        d.setDate(d.getDate() + DaysToFinish);
+        console.log(d);
+    </script>
+</body>
+
+</html>
